@@ -96,6 +96,7 @@ nav {
     height: auto;
     display: block;
     margin: 0 auto;
+    box-shadow: -2px 2px 8px 2px rgba(188, 188, 188, .7);
 }
 
 .portfolioContainer {
@@ -218,8 +219,10 @@ nav {
 .moreUX {
     margin-top: 100px;
 }
-.moreUx, .moreUI, .moreFrontEnd {
+.moreUX, .moreUI, .moreFrontEnd {
+    padding: 10px;
     margin-top: 100px;
+    box-shadow: -2px 2px 8px 2px rgba(188, 188, 188, .7);
 }
 
 /* media query styles */
