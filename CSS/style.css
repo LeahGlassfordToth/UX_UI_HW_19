@@ -1,0 +1,253 @@
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+/* header & nav styles */
+.navigation {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 44px;
+    padding: 1%;
+    text-align: center;
+}
+
+.navButtons {
+    width: 73%;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contactNav {
+    background-color: #FAE9F5; 
+}
+
+a:link {
+    color: black;
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: grey !important;
+    background-color: transparent;
+    text-decoration: underline !important;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 8px;
+}
+
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAE9F5;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+}
+
+.introContainer p {
+    max-width: 700px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+/* work sample styles */
+.radioK, .inTent, .petsOnly {
+    object-fit: cover;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 150px;
+}
+
+.imageContainer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.portfolioImage {
+    max-width: 850px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolioContainer {
+     display: flex;
+     justify-content: space-between;
+     align-items: baseline;
+}
+
+.portfolioContainer h3 {
+    padding-right: 24px;
+}
+
+.button {
+    float: right;
+    border-radius: 4px;
+    background-color: light grey;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* about skills styles */
+.content h1 {
+	font-size: 44px;
+	text-align: center;
+}
+
+.mainContent {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	margin: 100px 0;
+}
+
+.uxDesignContent, .uiDesignContent, .frontEndContent {
+	display: flex;
+	flex-direction: column;
+	margin: 0 16px;
+	width: 33%;
+	padding: 24px;
+	/* box shadow values - offset-x | offset-y | blur-radius | spread-radius | rgb color and transparency */
+	box-shadow: -2px 2px 8px 2px rgba(188, 188, 188, .7);
+}
+
+.mainContent h2 {
+	font-size: 40px;
+	margin-bottom: 4px;
+}
+
+.mainContent h3 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.cardImage {
+	max-width: 200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* contact page styles */
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 100px auto;
+}
+
+.portrait {
+    width: 100%;
+    height: auto;
+}
+
+.writeUp {
+    margin-top: 10px;
+    padding-left: 50px;
+    font-size: 24px;
+    width: 60%;
+}
+
+.mainMore {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+    font-size: 18px;
+}
+
+.moreUX {
+    margin-top: 100px;
+}
+.moreUx, .moreUI, .moreFrontEnd {
+    margin-top: 100px;
+}
+
+/* media query styles */
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mainContent {
+        flex-direction: column;
+    }
+    .uxDesignContent, .uiDesignContent, .frontEndContent {
+        width: 90%;
+        margin-bottom: 24px;
+    }
+    .mainMore {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .contact {
+        width: 90%;
+        margin: 100px 20px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+}
